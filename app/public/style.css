@@ -1,0 +1,42 @@
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: url("./images/shea-rouda-474308-unsplash.jpg");
+}
+
+.modal-dialog {
+  position: relative;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  min-width: 300px;
+}
+
+.modal {
+  font-weight: bold;
+}
+
+.jumbotron {
+background-color: rgb(103, 192, 188);
+font-weight: bold;
+}
+
+img {
+  max-width: 500px;
+}
+
+#coupleImage {
+  width: 300px;
+  display: grid; 
+  float: right;
+}
+
+.form-group {
+  padding-left: 0;
+}
+
+select {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="survey.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class=container>
+      <form id="surveyForm">
+        <h2>Survey Questions</h2>
+        <hr>
+        <div class=row>
+          <div class="col-md-12">
+
+            <div class="form-group">
+              <div class="form-group col-md-6">
+                <label for="inputName">Your name (required)</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="imageLink">Link to photo image</label>
+                <input type="text" class="form-control" id="imageLink" placeholder="URL" required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="questionsDiv">
+          <!--Questions dynamically generate here-->
+        </div>
+        <hr>
+
+        <div class=row>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary" id="submitSurveyBtn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--Match modal-->
+    <div class="modal" id="matchModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Meet your new best friend!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="matchInfo"><!--match name appears here--></p>
+              <span id="matchImageSpan"><!--match image appears here--></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>
